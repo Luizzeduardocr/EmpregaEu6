@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:theme="@style/ThemeOverlay.EmpregaEu4.FullscreenContainer"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="?attr/fullscreenTextColor"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/Widget.Theme.EmpregaEu4.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="374dp"
+            android:layout_height="580dp"
+            android:text="Existem várias estratégias que podem ser utilizadas para aumentar o número de praticantes de exercício físico e reduzir o custo da inatividade física na cidade do Recife. Algumas sugestões incluem:  Promover atividades físicas gratuitas: A criação de programas de exercício físico gratuitos, como caminhadas em grupo, aulas de ginástica ao ar livre, corridas e outras atividades, pode incentivar as pessoas a se exercitarem mais, independentemente de sua situação financeira. Isso pode ser feito por meio de parcerias com empresas locais, instituições governamentais e organizações sem fins lucrativos.  Melhorar a infraestrutura urbana: A construção de parques e espaços públicos para atividades físicas pode incentivar as pessoas a saírem de casa e se exercitarem mais. Melhorias nas ciclovias e calçadas também podem encorajar as pessoas a caminhar ou andar de bicicleta ao invés de usar o carro.  Parcerias com empresas locais: Parcerias com empresas locais, como academias de ginástica, podem oferecer descontos especiais para os moradores da cidade, tornando o exercício físico mais acessível.  Campanhas de conscientização: Campanhas de conscientização sobre a importância do exercício físico e dos riscos da inatividade física podem ajudar a mudar a mentalidade das pessoas e encorajá-las a se tornarem mais ativas. Essas campanhas podem incluir eventos públicos, campanhas nas mídias sociais e anúncios na mídia tradicional.  Promoção da atividade física nas escolas: A promoção da atividade física nas escolas pode ajudar a criar hábitos saudáveis desde a infância. As escolas podem oferecer aulas de educação física mais frequentes, incentivar atividades extracurriculares e promover a importância do exercício físico para uma vida saudável.  Essas são apenas algumas sugestões que podem ser utilizadas para aumentar o número de praticantes de exercício físico e diminuir o custo da inatividade física na cidade do Recife. É importante lembrar que mudanças efetivas requerem uma abordagem holística e a colaboração de diferentes setores da sociedade."
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+</FrameLayout>
